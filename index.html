@@ -3,19 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" /> 
     <title>Weather</title>
   </head>
   <body>
-    <h1>Hello Ann</h1>
+    <div class="container">
+      <div class="weather-app">
+        <form id="weather-form">
+          <input type="text" placeholder="Enter a city" id="city-input" autocomplete="off">
+          <button type="button" class="btn-btn" id="btn-search">search</button>
+        </form>
+        <h1 id="h1-city">Durban</h1>
+        <div class="row">
+          <div class="col-sm">
+            <ul>
+              <li>Last updated on: <span id="time">Tuesday 18:05</span></li>
+              <li><span id="description">clear sky</span></li>
+
+              <li>
+                Humidity:<span id="humidity">54</span>
+                <span id="percentage">%</span>
+                Wind:
+                <span id="wind">5</span>
+                <span id="wind-speed">km/h</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <div class="h2">
+              <img id="icon" src="./weather-data_files/rainy-day.png" alt="clear sky" class="cloudy-icon">
+              <span class="temp">
+                <strong id="temperature">43</strong>
+              </span>
+              <span class="units">
+                <a href="https://fabulous-chaja-616fd5.netlify.app/#" id="celcius-link">ºC</a>
+              </span>
+              |
+              <a href="https://fabulous-chaja-616fd5.netlify.app/#" id="fahrenheit">F</a>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"><div class="row">
+      <div class="col-2">
+       <div class="weather-forecast-date">
+      Thu</div>
+
+        <img src="./weather-data_files/rainy-day.png" width="36" alt="">
+        <div class="weather-forecast-temp">
+          <span class="forecast-max">16º</span>
+          <span class="forecast-min">6º</span>
+        </div>
+        </div>
+      <div class="col-2">
+       <div class="weather-forecast-date">
+      Fri</div>
+
+        <img src="./weather-data_files/rainy-day.png" width="36" alt="">
+        <div class="weather-forecast-temp">
+          <span class="forecast-max">11º</span>
+          <span class="forecast-min">8º</span>
+        </div>
+        </div>
+      <div class="col-2">
+       <div class="weather-forecast-date">
+      Sat</div>
+
+        <img src="./weather-data_files/rainy.png" width="36" alt="">
+        <div class="weather-forecast-temp">
+          <span class="forecast-max">11º</span>
+          <span class="forecast-min">6º</span>
+        </div>
+        </div>
+      <div class="col-2">
+       <div class="weather-forecast-date">
+      Sun</div>
+
+        <img src="./weather-data_files/rainy.png" width="36" alt="">
+        <div class="weather-forecast-temp">
+          <span class="forecast-max">8º</span>
+          <span class="forecast-min">3º</span>
+        </div>
+        </div>
+      <div class="col-2">
+       <div class="weather-forecast-date">
+      Mon</div>
+
+        <img src="./weather-data_files/rainy-day.png" width="36" alt="">
+        <div class="weather-forecast-temp">
+          <span class="forecast-max">10º</span>
+          <span class="forecast-min">4º</span>
+        </div>
+        </div></div></div>
     <footer>
-      This project was coded by
-      <a href="https://github.com/1543-STACK/" target="_blank"> Anu Govender/a
-      >, is
-      <a href="https://github.com/1543-STACK/weather-date" target="_blank">
+      This project is coded by
+      <a href="https://github.com/1543-STACK/" target="_blank"> Anu Govender
+, and is
+      <a href="https://github.com/1543-STACK/weather-data_files" target="_blank"
         >Open-sourced on GitHub</a
       >
       and
-      <a href="https://fabulous-chaja-616fd5/.netlify.app/#/" target="_blank"
+      <a href="https://fabulous-chaja-616fd5.netlify.app/#/" target="_blank"
         >Hosted by Netlify</a
       >
     </footer>
